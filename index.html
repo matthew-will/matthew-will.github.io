@@ -12,6 +12,7 @@
 
         marker.addEventListener('markerFound', function () {
           this.vid.play();
+          console.log('this video is playing')
         }.bind(this));
 
         marker.addEventListener('markerLost', function () {
@@ -46,7 +47,7 @@
 
 <body style='margin : 0px; overflow: hidden;'>
   <div class="arjs-loader">
-    <div>Loading, please wait...yo</div>
+    <div>Loading, please wait...</div>
   </div>
   <a-scene vr-mode-ui="enabled: false;" renderer='antialias: true; alpha: true; precision: mediump;' embedded
     arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: true;'>
